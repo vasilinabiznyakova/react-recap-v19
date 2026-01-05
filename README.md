@@ -31,3 +31,21 @@ Why React popular?
 - Creating React elements is natural
 - jsx makes it easier to find errors
 - we can insert JS code into  JSX elements
+
+Components - a piece of website
+Component name starts with capital letter and PascalCase
+JSX all components require closing tag or if no content than we can use self-closing tags
+We can use only one value of a function
+
+We can add component with the cirly brackets and also with component sysntax
+With the help of React our own html elements = main idea of React if there is nothing inside we can use self-closing tag
+
+To group elements wo unnecessary divs we can use fragments
+
+
+In React we use div for layout purposes
+
+Components are designed to be reusable, every component accept one parameter called props = object that contains all the parameters we gave to this component
+
+Multi-line comment
+
