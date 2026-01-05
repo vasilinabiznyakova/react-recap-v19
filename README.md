@@ -6,5 +6,3 @@
 
 3. [Links](1-links.md) (all the links used for each lesson)
 4. [Troubleshooting](2-troubleshooting.md) (solutions to issues)
-
-🎓 A certificate of completion is available for this course here: https://courses.supersimple.dev/courses/react
