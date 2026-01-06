@@ -1,30 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { ChatInput } from './components/ChatInput';
+import  ChatMessages from './components/ChatMessages';
+import './App.css';
 
-      function App () {
-        return (
-          <>
-          <ChatInput />
-          <ChatMessage 
-            message='hello chatbot' 
-            sender='user' 
-          />
-          <ChatMessage
-            message='Hello! How can I help you?'
-            sender='robot'
-          />
-          <ChatMessage
-            message='can you get me todays date?'
-            sender='user'
-          />
-          <ChatMessage
-            message='Today is September 27'
-            sender='robot'
-          />
-        </>
-        )
-      }
+function App() {
+  const [chatMessages, setChatMessages] = useState([
+    {
+      message: 'hello chatbot',
+      sender: 'user',
+      id: 'id1',
+    },
+    {
+      message: 'Hello! How can I help you?',
+      sender: 'robot',
+      id: 'id2',
+    },
+    {
+      message: 'can you get me todays date?',
+      sender: 'user',
+      id: 'id3',
+    },
+    {
+      message: 'Today is September 27',
+      sender: 'robot',
+      id: 'id4',
+    },
+  ]);
 
-export default App
+  return (
+    <div className='app-container'>
+      <ChatMessages chatMessages={chatMessages} />
+      <ChatInput
+        chatMessages={chatMessages}
+        setChatMessages={setChatMessages}
+      />
+    </div>
+  );
+}
+
+export default App;

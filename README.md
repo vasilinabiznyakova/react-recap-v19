@@ -101,3 +101,19 @@ this array called Dependancy Array = control when useEffect runs with the help o
 React.useRef();
 
 ref = container with special React features
+
+good practice is to devide css into 2 files App.css and index.css
+App contains styles for components
+index general css for the whole website
+
+Vite lets us import any types of file
+
+Vite is a modern frontend tooling platform that separates development and production concerns.
+In development, it leverages native ES modules and on-demand compilation, avoiding full bundling and enabling near-instant startup and hot updates.
+In production, it switches to an optimized bundling pipeline based on Rollup, applying tree-shaking, code-splitting, and asset optimization.
+This design significantly improves developer experience without sacrificing production performance.
+
+
+Best Practice 
+Separate each component into its own file
+Use separate css file for every component
