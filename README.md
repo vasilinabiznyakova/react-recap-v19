@@ -49,3 +49,33 @@ Components are designed to be reusable, every component accept one parameter cal
 
 Multi-line comment
 
+Event = onClick (always starts with on, always use camel case) = we should not pass the function directly wo runung it ewith ()
+Event Handlers = run function when we interact the website
+
+State - data that is connected to the HTML, when we update this data it will update the HTML
+
+React.useState will return an array, where first value is current data while second value is function that updates the data.
+In React we should not update the data directly, we should use the the function from useState to update data otherwise html won't be changed - updaterFunction;
+
+in React we do not update the data directly we would make a copy and use a copy to update
+
+
+React Best Practice = Do not use DOM manually as React is managing the website
+
+onChange runs a function when there is a change inside input, it got one param event;
+Event is an object that contains following properties:
+- event.target = elem that we are typing in
+- event.target.value = value we are typing in
+ in order to save the data we need to use useState
+
+
+ The technique - Lifting the State UP = share state between multiple comp
+
+We have a component tree, components on the same level can share the state via parent component 
+
+Naming convention = the same name for prop for prop variable
+
+
+Controlled inputs - used to clear the text from inputs using prop value we could change the text inside this <input>
+
+State doesn't update immediately! State us updated after all of the code os finished, in order to resolve multiple state changes you would have to save the result to variable
