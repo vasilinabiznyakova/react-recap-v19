@@ -79,3 +79,25 @@ Naming convention = the same name for prop for prop variable
 Controlled inputs - used to clear the text from inputs using prop value we could change the text inside this <input>
 
 State doesn't update immediately! State us updated after all of the code os finished, in order to resolve multiple state changes you would have to save the result to variable
+
+************Styling************
+
+in React we need to add class with a prop called className
+
+****HOOKS***
+hooks  = insert Rect features into our components
+basically useState is a hook
+every hook starts with a word use (useState, useEffect, useRef and more)
+
+useEffect = run some code after the component is created or updated
+
+- put hooks at the top of the component
+- hooks should not be inside anything
+
+useEffect accept a callback function as a 1st parameter and will run it once the component is created/updated; as a second parameter it would accept [] if array is empty it will run only after  component is created, if you pass to array some data it will run when data is changed
+this array called Dependancy Array = control when useEffect runs with the help of this array we  control how often we 
+
+
+React.useRef();
+
+ref = container with special React features
