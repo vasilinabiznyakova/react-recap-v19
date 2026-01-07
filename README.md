@@ -130,3 +130,5 @@ This is is called Single Page Application (SPA)
 <a> will reload the page always but it doesnt have any sense in case with SPA instead we should use Link from react-router. allow tp go to another page wo reloading = faster
 
 we can use fetch(built in method to make reqs to backend but axios  = cleaner way to make requests to backend)
+
+useEffect is being run twice when we use <StrictMode>, its done for purpose of catching bugs
