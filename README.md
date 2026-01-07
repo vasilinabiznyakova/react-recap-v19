@@ -132,3 +132,4 @@ This is is called Single Page Application (SPA)
 we can use fetch(built in method to make reqs to backend but axios  = cleaner way to make requests to backend)
 
 useEffect is being run twice when we use <StrictMode>, its done for purpose of catching bugs
+API - application programming interface
