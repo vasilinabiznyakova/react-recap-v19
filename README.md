@@ -126,3 +126,5 @@ We need to create a new component for every page and save it in src/pages
 Feature lets us create multiple pages using 1 HTML file, this lets us teuse our html code
 This is is called Single Page Application (SPA)
 
+
+<a> will reload the page always but it doesnt have any sense in case with SPA instead we should use Link from react-router. allow tp go to another page wo reloading = faster
