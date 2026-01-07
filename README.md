@@ -119,3 +119,10 @@ Separate each component into its own file
 Use separate css file for every component
 
 We need to create a new component for every page and save it in src/pages
+
+
+****Routing*****
+
+Feature lets us create multiple pages using 1 HTML file, this lets us teuse our html code
+This is is called Single Page Application (SPA)
+
