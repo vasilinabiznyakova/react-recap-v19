@@ -117,3 +117,5 @@ This design significantly improves developer experience without sacrificing prod
 Best Practice 
 Separate each component into its own file
 Use separate css file for every component
+
+We need to create a new component for every page and save it in src/pages
