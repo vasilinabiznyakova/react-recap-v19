@@ -133,3 +133,8 @@ we can use fetch(built in method to make reqs to backend but axios  = cleaner wa
 
 useEffect is being run twice when we use <StrictMode>, its done for purpose of catching bugs
 API - application programming interface
+
+
+Backend = manage the data
+Frontend = present the data
+
