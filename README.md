@@ -138,3 +138,4 @@ API - application programming interface
 Backend = manage the data
 Frontend = present the data
 
+Fragment component is used to add keys to iterated items
