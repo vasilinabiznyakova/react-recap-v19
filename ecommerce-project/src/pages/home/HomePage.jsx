@@ -9,10 +9,12 @@ export function HomePage({ cart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios('/api/products').then((response) => {
-      response.data;
+    const getHOmeData = async () => {
+      const response = await axios('/api/products');
       setProducts(response.data);
-    });
+    };
+
+    getHOmeData();
   }, []);
 
   return (
