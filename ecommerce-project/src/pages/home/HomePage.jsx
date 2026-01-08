@@ -10,7 +10,7 @@ export function HomePage({ cart, loadCart }) {
 
   useEffect(() => {
     const getHOmeData = async () => {
-      const response = await axios('/api/products');
+      const response = await axios.get('/api/products');
       setProducts(response.data);
     };
 
