@@ -184,3 +184,29 @@ We can create mock that do nothing and also we can mock the implementation = mak
 
 In order Link components work they need to be inside router 
 MemoryRouter = specifically for testing
+
+Usually we create tests for all the components
+
+
+Deploying = how to put a React app on the internet
+
+AWS  - collection of services that help us to put stuff on the Internet
+
+EC2 - Amazon Elastic Compute Cloud, it allows rent a computer from AWS
+Infrastructure as a Service (IaaS)
+We way launch as many instances as we need
+EC2 just gives us a computer, we still need to:
+1. Install NodeJS
+2. Connect it to the Internet
+3. Upload our code
+
+In order to resolve the above AWS provided another service Elastic Beanstalk (a layer top EC2)
+1. Uses EC2 to rent a computer + also install all the software we need to install at the computer
+It does all the software setup for us
+
+We need to upload all the code to Elastic Beanstalk thats it (This is called Platform as a Service - PaaS)
+Role = gives Elastic Beanstalk permission to use other services in AWS
+
+Instance types = let us choose the computer we would like to rent 
+
+Vite has an npm run build command that compiles JSX to JavaScript and minifies the code.
