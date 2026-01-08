@@ -179,3 +179,9 @@ When we testing a function we run function and testing results, when we testing 
 
 In our test we should not contact real backend, if we need to run a function we should use mocks
 We can mock the entire npm package - fake version
+
+Test Hooks
+ - beforeEach()
+ - afterEach
+ - beforeAll
+ - afterAll
