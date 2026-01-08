@@ -159,3 +159,16 @@ When backend get a request from frontend it checks both URL path and type of req
 
 ****useNavigate****
 Hook to navigate to another page (redirect) useNavigate
+
+********************Automated testing******************************
+
+Automated testing are more efficient than manual testing
+NPM packages for automated testing:
+ - Jest
+ - Vitest
+
+Unit test - when we test 1 piece of code - 1 function
+Testing components is not for unit test
+
+describe = groups tests together
+
