@@ -157,3 +157,5 @@ Every req also has a Type(get, post)
 
 When backend get a request from frontend it checks both URL path and type of request to decide than what to do
 
+****useNavigate****
+Hook to navigate to another page (redirect) useNavigate
