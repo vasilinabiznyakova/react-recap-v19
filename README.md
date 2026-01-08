@@ -167,8 +167,14 @@ NPM packages for automated testing:
  - Jest
  - Vitest
 
-Unit test - when we test 1 piece of code - 1 function
+Vitest can be used for both frontend and backend testing, but it’s primarily popular in frontend projects because of its tight integration with Vite and fast feedback loop.
+
+1) Unit test - when we test 1 piece of code - 1 function
 Testing components is not for unit test
 
 describe = groups tests together
+2) Integration test = test multiple units of code working together
 
+When we testing a function we run function and testing results, when we testing a component we render it and check if it is being displayed the component on the page correctly
+
+In our test we should not contact real backend, if we need to run a function we should use mocks
