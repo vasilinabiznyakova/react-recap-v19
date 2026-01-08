@@ -149,3 +149,11 @@ To solve this we usually should create a new function inside useEffect
 Data Mutation = update data at backend
 post() = create data at backend
 get() = get data from backend
+put() = update some data
+delete() = delete
+
+Based on URL path the nbackend can do different things
+Every req also has a Type(get, post)
+
+When backend get a request from frontend it checks both URL path and type of request to decide than what to do
+
