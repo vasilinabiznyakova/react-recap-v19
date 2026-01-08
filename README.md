@@ -178,3 +178,4 @@ describe = groups tests together
 When we testing a function we run function and testing results, when we testing a component we render it and check if it is being displayed the component on the page correctly
 
 In our test we should not contact real backend, if we need to run a function we should use mocks
+We can mock the entire npm package - fake version
