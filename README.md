@@ -144,3 +144,8 @@ Fragment component is used to add keys to iterated items
 The inner function in useEffect should not return a Promise!
 It should either return nothing otr clean a function
 To solve this we usually should create a new function inside useEffect 
+
+
+Data Mutation = update data at backend
+post() = create data at backend
+get() = get data from backend
