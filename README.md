@@ -277,3 +277,5 @@ Type  Inference = TypeScript can figure out the type automatically
 How convert existing project to TS?
 
 Type Alias = works like a variable but for types
+
+We can use GitHub Copilot to write the React code faster
