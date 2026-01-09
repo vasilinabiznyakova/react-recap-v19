@@ -274,3 +274,4 @@ It prompt the methods proper for the types, does Types checking, in JS there is 
 If types error we wont be able to build 
 
 Type  Inference = TypeScript can figure out the type automatically 
+How convirt existing project to TS?
