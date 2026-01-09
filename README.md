@@ -210,3 +210,67 @@ Role = gives Elastic Beanstalk permission to use other services in AWS
 Instance types = let us choose the computer we would like to rent 
 
 Vite has an npm run build command that compiles JSX to JavaScript and minifies the code.
+
+
+Elastic Beanstalk  - Capacity instead of 1 instance add Load Balancer (when the traffic is too high it allows to distribute the request across several computers) this allows our website to handle more users
+
+With AWS we can set up own domain,  also there is a AWS Certificate Manager wich allows to encrypt our website
+
+Changes React 19
+
+1. Support for document metadata (<title>, <link> <meta>), now we can put them directly inside the component
+Before we had to use Helmet
+2. You can now access ref as a prop for function components, for example if you need to get a ref to an html element inside this component, before we had to use forwardRef, now ref is a normal prop
+3. React compiler = optimizes our react code
+Before When a component updates it will re-create all the components inside and before we had to use useMemo
+Now the Compiler will add these optimizations automatically
+Now we dont have to useMemo, useCallback anymore
+All we need to do is to set up react compiler
+
+
+Set Up React Compiler
+
+1. Install the React Compiler npm package:
+npm install --save-dev babel-plugin-react-compiler@rc
+2. Copy this react config:
+react({
+  babel: {
+    plugins: [['babel-plugin-react-compiler', { target: '19' }]],
+  },
+})
+3. Update the react config in vite.config.js:
+export default defineConfig({
+  /* Replace the default react config:
+  plugins: [react()]
+  */
+
+  // With the react config you copied above, like this:
+  plugins: [react({
+    babel: {
+      plugins: [['babel-plugin-react-compiler', { target: '19' }]],
+    },
+  })],
+
+  ...
+})
+Check if React Compiler is Working
+Start the backend using npm run dev.
+Start the frontend using npm run dev.
+Install the React DevTools Chrome extension.
+In your project (open the URL provided by Vite in the browser), open the Console, and open the "Components" tab.
+If there's a badge beside the components called "Memo ✨" the React Compiler is working.
+
+
+4. Removed propTypes and defaultProps for functions
+Before we used propTypes to check the types for our props now we use TypeScript'
+But we need set up Typescript 
+npx create-vite@6.5.0
+it will use tsx files inside
+
+
+
+Typescript = js with extra features, we can add types for our variables
+It prompt the methods proper for the types, does Types checking, in JS there is no type checking
+If types error we wont be able to build 
+
+Type  Inference = TypeScript can figure out the type automatically 
